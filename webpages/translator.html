@@ -11,17 +11,19 @@
   <body>
     <h1>Available Translators/ Interpreters for Ruby</h1>
 
-    <h2>Ruby MRI (Matz's Ruby Interpreter)</h2>
+    <h2>Ruby MRI (Matz's Ruby Interpreter) / CRuby</h2>
     <li>The default Ruby translator for versions up to Ruby 1.8</li>
     <li>Developed by Ruby's creator, Yukihiro Matsumoto</li>
     <li>Written in C</li>
+    <li>Community efforts to make frequent changes and updates, best for general programming</li>
     <h3>Installation</h3>
     <li><a href="https://www.ruby-lang.org/en/downloads/">Ruby Download</a></li>
 
-    <h2>YARV (Yet Another Ruby VM)</h2>
+    <h2>YARV (Yet Another Ruby VM) / KRI (Koichi's Ruby Interpreter)</h2>
     <li>Developed by Koichi Sasada</li>
     <li>Like Ruby MRI, it is written in C</li>
     <li>Replaced Ruby MRI as the default translator for Ruby 1.9</li>
+    <li>Bytecode Interpreter attributed to the speed and efficiency of Ruby 1.9 compared to previous versions</li>
     <h3>Installation</h3>
     <li><a href="https://www.ruby-lang.org/en/downloads/">Ruby Download</a></li>
     <li><a href="https://github.com/ruby/ruby">Ruby Github</a></li>
@@ -30,6 +32,7 @@
     <li>Primarily written in Java and uses Java Virtual Machine</li>
     <li>Supported compatibility with Ruby on Rails and Ruby MRI</li>
     <li>Originally developed as a direct C port, but later added features to improve  compile time</li>
+    <li>Being built on JVM, it has access to features like garbage collection and libraries</li>
     <h3>Installation</h3>
     <li><a href="https://www.jruby.org/">JRuby Download</a></li>
 
@@ -37,8 +40,15 @@
     <li>Like Ruby MRI, mruby is created by Yukihiro Matsumoto</li>
     <li>Primarily written in C, with some parts written in Ruby</li>
     <li>Compatable with Ruby 2.1 and up to Ruby 3.4.3 (current stable version)</li>
+    <li>Can be linked and embedded in other programs</li>
     <h3>Installation</h3>
     <li><a href="https://mruby.org/">mruby Download</a></li>
+
+    <h2>Other Translators / Interpreters</h2>
+    <li><a href="https://rubini.us/">Rubinius -- Built in Ruby</a></li>
+    <li><a href="https://opalrb.org/">Opal -- Ruby to Javascript for web applications</a></li>
+    <li><a href="https://github.com/sisshiki1969/ruruby">ruruby -- Ruby made with Rust</a></li>
+    <li><a href="https://github.com/planetruby/awesome-rubies?tab=readme-ov-file">Many more rubies</a></li>
 
     <h3><a href="main.html">Back to main</a></h3>
   </body>
