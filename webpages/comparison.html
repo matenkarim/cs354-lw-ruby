@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Language Comparison: Ruby, Python, Perl, AWK</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+            vertical-align: top;
+        }
+        th {
+            background-color: #f2f2f2;
+            font-weight: bold;
+        }
+        caption {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Comparison: Ruby, Python, Perl, AWK</h1>
+
+    <table>
+        <caption>Feature Comparison</caption>
+        <thead>
+            <tr>
+                <th>Feature</th>
+                <th>Ruby</th>
+                <th>Python</th>
+                <th>Perl</th>
+                <th>AWK</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Typing Discipline</td>
+                <td>Dynamic & Strong, duck typing, no implicit conversions</td>
+                <td>Dynamic & Strong, duck typing, optional type hints</td>
+                <td>Dynamic & Weak-ish, auto-conversion between types</td>
+                <td>Dynamic & Weak, auto-conversion between strings/numbers</td>
+            </tr>
+            <tr>
+                <td>Syntax & Readability</td>
+                <td>Elegant, flexible, English-like, principle of least astonishment</td>
+                <td>Clean, indent-based, pseudocode-like, one obvious way</td>
+                <td>Expressive but cryptic, sigils ($,@,%), TMTOWTDI</td>
+                <td>Terse, pattern-action pairs, minimal syntax</td>
+            </tr>
+            <tr>
+                <td>Paradigm Support</td>
+                <td>Multi-paradigm (primarily OOP), everything is an object, metaprogramming</td>
+                <td>Multi-paradigm (procedural, OOP, functional)</td>
+                <td>Multi-paradigm (primarily procedural/OOP)</td>
+                <td>Procedural, data-driven pattern-action</td>
+            </tr>
+            <tr>
+                <td>Concurrency Model</td>
+                <td>GIL-limited threads (MRI), fibers, processes, alternatives without GIL</td>
+                <td>GIL-limited threads, asyncio, multiprocessing</td>
+                <td>Threads via ithreads, usually forking, event loops</td>
+                <td>None (single-threaded)</td>
+            </tr>
+             <tr>
+                <td>Memory Management</td>
+                <td>Garbage collected (mark-and-sweep, generational)</td>
+                <td>Garbage collected (reference counting + cycle detection)</td>
+                <td>Garbage collected (reference counting)</td>
+                <td>Automatic (deterministic)</td>
+            </tr>
+            <tr>
+                <td>Ecosystem & Libraries</td>
+                <td>Large & web-focused (RubyGems), Rails-driven</td>
+                <td>Huge & active (PyPI), libraries for almost everything</td>
+                <td>Comprehensive (CPAN), mature but slowing</td>
+                <td>Minimal & built-in, Unix tools as ecosystem</td>
+            </tr>
+            <tr>
+                <td>Scalability & Maintainability</td>
+                <td>Powers large websites, expressive code, convention over configuration</td>
+                <td>Good development scalability, clean syntax aids maintenance</td>
+                <td>Can be challenging for large codebases, discipline required</td>
+                <td>Not for large applications, good for small tasks</td>
+            </tr>
+            <tr>
+                <td>Performance</td>
+                <td>Moderate (interpreter with JIT), improved in 3.x, alternative VMs</td>
+                <td>Moderate (interpreter), GIL limitations, C extensions for speed</td>
+                <td>Moderate, optimized for regex/string processing</td>
+                <td>High for text processing, small footprint</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
