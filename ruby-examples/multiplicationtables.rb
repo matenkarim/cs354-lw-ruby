@@ -1,8 +1,9 @@
-# Ruby IO example:
-# @author Team Halibut
-# In Ruby, IO is built directly into the language itself (no imports needed).
+x = 1
+y = 1
 
-puts "What's your name?"
-# gets grabs user input and .chomp removes any trailing newlines
-userName = gets.chomp
-puts "Hello, #{userName}! Nice to meet you."
+(1..x).each do |a|
+    (1..y).each do |b|
+        print "#{a * b} "
+    end
+    puts ""
+end
