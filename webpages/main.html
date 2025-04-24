@@ -1,5 +1,11 @@
 <!doctype html>
 <html>
+    <head>
+        <meta charset="utf-8">
+        <title>Ruby</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+      </head>
     <body>
         <h1>Ruby</h1>
         <li><a href="history.html">History</a></li>
@@ -7,6 +13,67 @@
         <li><a href="specs.html">Links</a></li>
         <li><a href="translator.html">Translators</a></li>
         <li><a href="examples.html">Examples</a></li>
-        
+        <li><a href="references.html">References</a></li>
+        <p>Ruby is “…an interpreted, open-source programming language with a focus on simplicity and productivity.” 
+            Ruby is a popular programming language that enjoys widespread use by developers around the world (Stabile, 2023). Ruby is free of charge, 
+            free to use, copy, modify, and distribute. Ruby makes up the basis for the popular Ruby on Rails web application framework used in popular websites such as Twitter, 
+            GitHub, and Shopify.</p>
+
+        <h2>Variable Scope Identifiers</h2>
+        <p>Ruby uses symbols to identify the current scope and capitalization to identify mutability. 
+            Lowercase variables are mutable while variables starting with an uppercase letter are immutable. 
+            Here’s a quick run through:</p>
+        <li>myVar -> Local variable</li>
+        <li>MyVar -> Local constant</li>
+        <li>@myVar -> Instance variable</li>
+        <li>$myVar -> Global variable</li>
+        <li>self.myVar -> Refers to the current object’s version of the given variable or method (similar to Java’s “this” keyword)</li>
+
+        <h2>Inheritance</h2>
+        <p>
+            class MyCounter <br />
+                &emsp;include Enumerable <br />
+            end <br />
+        </p>
+        <p>Only single inheritance is supported in Ruby, so each parent “class” can only have one child. Ruby has specific terminology for determining which is which in the pecking order. 
+            Modules are the Ruby equivalent of parent “classes” which offer a collection of methods. Classes in Ruby are the children of their respective parent Module, 
+            extending its functionality.</p>
+
+        <h2>Object Structure</h2>
+        <p>2.times { print “Prepare for trouble!” }</p>
+        <p>In Ruby, everything is an object! Every bit of information and code can be given their own properties and actions. 
+            Even numbers and primitive types are handled as objects in Ruby with their own methods and instance variables.</p>
+
+        <h2>Flexibility</h2>
+        <p>
+            class Numeric <br />
+                &emsp;def multiplyBy(x) <br />
+                    &emsp;&emsp;self * x <br />
+                &emsp;end <br />
+            end <br />
+            y = 2.multiplyBy(8) <br />
+            puts y <br />
+            # Output: 16 <br />
+        </p>
+        <p>Another defining pilar of Ruby is its flexibility. Ruby allows developers to freely alter its parts, and essential parts of Ruby can be removed, redefined, or extended at will.</p>
+
+        <h2>Blocks</h2>
+        <p>
+            def customBehaviorShowcase <br />
+                &emsp;puts “Start of method…” <br />
+                &emsp;yield if block_given? # Run any Blocks available <br />
+                &emsp;puts “End of method…” <br />
+            End <br />
+            # Runs the method we just defined with a Block to demonstrate. <br />
+            customBehaviorShowcase do <br />
+                &emsp;puts “Custom activity woohoo!” <br />
+            end <br />
+            # Output: <br />
+            # 	Start of method… <br />
+            # 	Custom activity woohoo! <br />
+            # 	End of method… <br />
+        </p>
+        <p>Like Scheme, Ruby provides support for Closures (persistent scopes that hold onto local variables outside of their scope if a reference to their function is used later on) 
+            in the form of Blocks. You can attach a Block to any method to describe how the method should act (Members of the Ruby community, 2025).</p>
     </body>
 </html>
